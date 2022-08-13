@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% block content %}
+    <br>
+    <div style="text-align: center;">
+        <h5>ADD</h5>
+        <form method="POST" action="res/">
+        {% csrf_token %}
+            <input type="text" name="num1">
+            <input type="text" name="num2">
+            <input type="text" name="char">
+            <button type="submit">Calculate</button>
+        </form>
+        
+    </div>
+    <a href="{% url 'math' %}"><Button>GO MATH</Button></a>
+
+{% endblock %}

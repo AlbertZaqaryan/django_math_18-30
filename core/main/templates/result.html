@@ -1,0 +1,7 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <h4>Result = {{ res }}</h4>
+    <a href="{% url 'calculator' %}"><Button>GO BACK</Button></a>
+    <a href="{% url 'math' %}"><Button>GO MATH</Button></a>
+{% endblock %}
